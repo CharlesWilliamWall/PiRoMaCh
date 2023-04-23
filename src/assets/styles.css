@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200&family=Roboto+Mono:wght@400;500;700&display=swap");
+
+:root {
+    --errorColor: #f0384a;
+    --accentColor: #ff6978;
+    --promoTagColor: #ff6978b8;
+    --secondaryAccentColor: rgb(250, 209, 58);
+    --ternaryAccentColor: rgb(238, 205, 113);
+    --primaryLightColor: #fffcf9;
+    --secondaryLightColor: #aaaabc;
+    --primaryFeature: #aad9d5;
+    --secondaryFeature: rgb(84, 98, 148);
+    --primaryContent: #333745;
+    --gradientStart: #6e79a1;
+    --darkColor: #101011;
+    --modalBackdrop: rgba(0, 0, 0, 0.5);
+    --itemBackdrop: rgba(0, 0, 0, 0.25);
+    --radius: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(to bottom, var(--gradientStart), var(--primaryLightColor)) no-repeat;
+    color: var(--darkColor);
+    line-height: 1.6;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 110rem;
+}
+
+.carousel__prev,
+.carousel__next {
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.carousel__next {
+    position: absolute;
+    right: -2.5%;
+}
+
+.carousel__prev {
+    position: absolute;
+    left: -2.5%;
+}
+
+button {
+    font-family: "Roboto Mono", monospace;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    transition: all linear 0.2s;
+}
+
+.btn-primary {
+    padding: 1.5rem 1.5rem;
+    margin: 0 1rem;
+    color: var(--primaryLightColor);
+
+    border: solid var(--secondaryFeature) 0.2rem;
+    background-color: var(--secondaryFeature);
+    box-shadow: 0 0 3px var(--itemBackdrop);
+}
+
+.btn-primary:hover {
+    background-color: var(--primaryContent);
+    border-color: #fff;
+    transition: 0.2s all linear;
+}
+
+.btn-secondary {
+    padding: 1.5rem 1.5rem;
+    margin: 0 1rem;
+    color: var(--darkColor);
+    border: solid var(--secondaryFeature) 0.2rem;
+    background-color: var(--secondaryLightColor);
+    box-shadow: 0 0 3px var(--itemBackdrop);
+}
+.btn-secondary:hover {
+    background-color: var(--primaryContent);
+    border-color: #fff;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+
+.btn-ternary {
+    padding: 3rem 3rem;
+    /* margin: 0 1rem; */
+    color: var(--darkColor);
+    width: 100%;
+    border: solid var(--primaryFeature) 0.2rem;
+    border-radius: 0.5rem;
+    /* background-color: var(--secondaryAccentColor); */
+    background-color: #fff;
+    box-shadow: 0 0 3px var(--itemBackdrop);
+}
+
+.btn-ternary:hover {
+    background-color: var(--primaryContent);
+    border-color: #fff;
+    color: var(--primaryFeature);
+    transition: 0.2s all linear;
+}
+.btn-cancel {
+    padding: 1.5rem 1.5rem;
+    margin: 0 1rem;
+    color: #fff;
+    border: solid var(--secondaryFeature) 0.2rem;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 3px var(--itemBackdrop);
+}
+
+.btn-cancel:hover {
+    background: var(--primaryLightColor);
+    color: var(--errorColor);
+    transition: 0.2s all linear;
+}
+
+.tabs {
+    background-color: var(--secondaryFeature);
+    border: none;
+    color: var(--secondaryLightColor);
+    width: 100%;
+    padding: 4rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+    justify-content: center;
+    transition: 0.2s all linear;
+}
+
+.tabs:hover {
+    background-color: var(--primaryContent);
+    color: var(--primaryLightColor);
+    transition: 0.2s all linear;
+}
+
+.tabs-cancel {
+    background-color: var(--ff6978);
+    border: none;
+    color: var(--primaryLightColor);
+    width: 600px;
+    padding: 3rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+.tabs-cancel:hover {
+    background-color: var(--errorColor);
+    color: var(--primaryLightColor);
+}
