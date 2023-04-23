@@ -4,7 +4,7 @@ import CheckoutDelivery from "@/components/checkout/tabs/CheckoutDelivery.vue";
 import CheckoutPayment from "@/components/checkout/tabs/CheckoutPayment.vue";
 import CheckoutConfirm from "@/components/checkout/tabs/CheckoutConfirm.vue";
 import CheckoutTop from "@/components/checkout/tabs/CheckoutTop.vue";
-import CheckoutInvoice from "@/components/checkout/tabs/CheckoutInvoice.vue";
+// import CheckoutInvoice from "@/components/checkout/tabs/CheckoutInvoice.vue";
 </script>
 
 <template>

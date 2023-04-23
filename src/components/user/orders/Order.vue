@@ -38,7 +38,7 @@ onMounted(async () => {
                             <td class="itemTitle">{{ truncateString(item.title, 30) }}</td>
                             <td class="itemNumber">{{ item.price.toFixed(2) }} $</td>
                             <td class="itemNumber">{{ item.quantity }}</td>
-                            <td class="itemNumber">{{ item.subtotal.toFixed(2) }} $</td>
+                            <!-- <td class="itemNumber">{{ item.subtotal.toFixed(2) }} $</td> -->
                         </tr>
                     </tbody>
                 </table>

@@ -7,7 +7,7 @@ import { isAuthenticatedGuard, isNotAuthenticatedGuard } from "./guards";
 import NotFound404 from "./components/NotFound404.vue";
 import signin from "@/components/SignIn.vue";
 import signUp from "@/components/SignUp.vue";
-import CheckOutView from "@/views/CheckOutView.vue";
+// import CheckOutView from "@/views/CheckOutView.vue";
 import PrintInvoice from "@/components/checkout/tabs/PrintInvoice.vue";
 
 const router = createRouter({
@@ -49,11 +49,11 @@ const router = createRouter({
             name: "item",
             component: ItemInfo,
         },
-        {
-            path: "/checkout",
-            name: "checkout",
-            component: CheckOutView,
-        },
+        // {
+        //     path: "/checkout",
+        //     name: "checkout",
+        //     component: CheckOutView,
+        // },
         {
             path: "/invoice",
             name: "invoice",

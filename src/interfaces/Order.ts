@@ -1,6 +1,6 @@
-import type Item from "./Item";
-import type Invoice from "./Invoice";
-import type User from "./User";
+import type { Item } from "./Item";
+import type { Invoice } from "./Invoice";
+import type { User } from "./User";
 
 export default interface Order {
     id: Number;
